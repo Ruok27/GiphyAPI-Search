@@ -1,0 +1,46 @@
+#buttonSpace{
+    border: solid;
+    background: yellow;
+    float: inline-start;
+}
+
+
+
+#submitSpace{
+
+    border: solid;
+    float: inline-end;
+float: right;
+
+
+}
+#divider{
+
+    float: left;
+
+
+
+}
+
+#gifSpace{
+
+    border: solid;
+    background: greenyellow;
+    float: left;
+    
+
+}
+
+
+
+#submitButton{
+    height: 30px;
+    width: 90px;
+    color: white;
+    border-style: none;
+  background-color: #4aaaa5;
+  
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  margin: 30px auto 20px 20px;
+  
+  }
