@@ -1,7 +1,9 @@
 <html>
 
 <head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
@@ -15,6 +17,11 @@
 
 <p>This is the space for buttons </p>
 
+
+
+
+
+
 </div>
 
 
@@ -24,7 +31,7 @@
 
 
 <p>Add an Animal: </p>
-<input type="text" name="animalInput" value="">
+<input type="text" class="form-control" id="textInput">
 <input id="submitButton" type="submit" value="Submit">
 
 
@@ -33,13 +40,68 @@
 <div id = "divider"></div>
 
 
+
+
+
+
 <div id = "gifSpace">
 
     <p>This is the space for gifs </p>
 
 
+    
+
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div id = "gif1"></div>
+        </div>
+          <div class="col-sm">
+            <div id = "gif2"></div>
+          </div>
+          <div class="col-sm">
+            <div id = "gif3"></div>
+          </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-sm">
+              <div id = "gif4"></div>
+            </div>
+            <div class="col-sm">
+              <div id = "gif5"></div>
+            </div>
+            <div class="col-sm">
+              <div id = "gif6"></div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-sm">
+              <div id = "gif7"></div>
+            </div>
+            <div class="col-sm">
+              <div id = "gif8"></div>
+            </div>
+            <div class="col-sm">
+              <div id = "gif9"></div>
+            </div>
+            <div class="col-sm">
+                <div id = "gif10"></div>
+              </div>
+          </div>
+      </div>
+      <!--end container-->
+
+
 </div>
 
+
+
+<script src="main.js"></script>
 
 
 
