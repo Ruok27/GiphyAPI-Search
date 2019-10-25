@@ -2,6 +2,15 @@ let topics = ["dog", "cat", "rabbit", "hamster", "skunk", "goldfish", "birds"];
 let buttonSpace = $("#buttonSpace");
 let gifSpace = $("#gifSpace");
 
+let colOne = $("#gif1");
+let colTwo = $("#gif4");
+let colThree = $("#gif7");
+
+
+
+
+
+
 
 
 
@@ -87,6 +96,10 @@ $(document).on("click", ".buttons", function () {
                 actualGif.attr("src", getBack[i].images.fixed_height.url);
 
 
+                let gifRating = $("<p>");
+                gifRating.text("Rating : " + getBack[i].rating);
+
+                gifSpace.append(gifRating);
                 gifSpace.append(actualGif);
 
 
@@ -111,3 +124,20 @@ $(document).on("click", ".buttons", function () {
     });
     //end on button click
 })
+
+
+
+$(document).on("click", "img", function () {
+    // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    var state = $(this).attr("data-state");
+    // If the clicked image's state is still, update its src attribute to what its data-animate value is.
+    // Then, set the image's data-state to animate
+    // Else set src to the data-still value
+    if (state === "still") {
+      $(this).attr("src", $(this).attr("data-animate"));
+      $(this).attr("data-state", "animate");
+    } else {
+      $(this).attr("src", $(this).attr("data-still"));
+      $(this).attr("data-state", "still");
+    }
+  });
